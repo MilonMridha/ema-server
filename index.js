@@ -47,6 +47,10 @@ async function run() {
             
             const count = await productCollection.estimatedDocumentCount();
             res.send({count});
+        });
+
+        app.get('/order', (req, res) =>{
+            res.send('Milon Mrida s orders')
         })
 
 
